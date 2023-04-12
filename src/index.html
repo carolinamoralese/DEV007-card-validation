@@ -6,9 +6,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Comfirmar reserva</h1>
+<div id = "pantalla-general">
+
+
+  <div id = "pantalla-uno">
+    <p>Tarjeta Debito o Credito</p>
+    <p>Usa los digitos del codigo de seguridad de tu tarjeta</p>
+    <input type = "number" id="numero-tarjeta" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==16) return false;" placeholder="Numero de tarjeta"/> 💳
+    <input type = "number" placeholder="CVV/CVC">
+    <br><br>
+    <input type = "text" placeholder = "Nombre (debe coincidir con la tarjeta)" style="width: 226px;">
+    <br><br>
+    <input type = "number" placeholder = "Celular del titular de la tarjeta" style="width: 226px;">
+    <br><br>
+    <label><input type = "checkbox">Autorizo esta tarjeta para futuros pagos.</label>
+    <br><br>
+    <label><input type = "checkbox">Deseo programar el pago automatico de este servicio</label>
+  </div>
+
+  <div id = "pantalla-dos">
+  
+
+  </div>
+
+
+    <br><br>
+    <button id="enviar">Enviar</button>
+  
+</div>
     <header></header>
     <main></main>
     <footer></footer>
     <script src="index.js" type="module"></script>
+ 
+ 
+ 
+ 
+ 
+ 
   </body>
 </html>
+---
