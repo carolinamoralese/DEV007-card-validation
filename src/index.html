@@ -6,38 +6,80 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Comfirmar reserva</h1>
-<div id = "pantalla-general">
+<form>
+    
+    <div style="width: 72%;"><h1>Comfirmar reserva</h1></div>
+<div id = "pantalla-general" class="contenedor">
 
 
-  <div id = "pantalla-uno">
-    <p>Tarjeta Debito o Credito</p>
+  <div id = "pantalla-uno" class="pantalla1">
+    <p id="tc">Tarjeta Debito o Credito</p>
     <p>Usa los digitos del codigo de seguridad de tu tarjeta</p>
-    <input type = "number" id="numero-tarjeta" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==16) return false;" placeholder="Numero de tarjeta"/> 💳
-    <input type = "number" placeholder="CVV/CVC">
+    <input type = "number" id="numero-tarjeta" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==16) return false;" placeholder="Numero de tarjeta" required/> 💳
+    <input type = "number" placeholder="CVV/CVC" required>
     <br><br>
-    <input type = "text" placeholder = "Nombre (debe coincidir con la tarjeta)" style="width: 226px;">
+    <input type = "text" placeholder = "Nombre (debe coincidir con la tarjeta)" style="width: 72%;" required>
     <br><br>
-    <input type = "number" placeholder = "Celular del titular de la tarjeta" style="width: 226px;">
+    <input type = "number" placeholder = "Celular del titular de la tarjeta" style="width: 72%;" required>
     <br><br>
     <label><input type = "checkbox">Autorizo esta tarjeta para futuros pagos.</label>
     <br><br>
-    <label><input type = "checkbox">Deseo programar el pago automatico de este servicio</label>
+    <label><input type = "checkbox">Deseo programar el pago automatico de este servicio.</label>
   </div>
 
-  <div id = "pantalla-dos">
-  
+  <div id = "pantalla-dos" class="pantalla2">
+  <p>Fecha de vencimiento</p>
+  <label for="meses">MM</label>
+  <select name="Mes" id="meses" required>
+    <option value="Enero">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="Marzo">Marzo</option>
+    <option value="Abril">Abril</option>
+    <option value="Mayo">Mayo</option>
+    <option value="Junio">Junio</option>
+    <option value="Julio">Julio</option>
+    <option value="Agosto">Agosto</option>
+    <option value="Septiembre">Septiembre</option>
+    <option value="Octubre">Octubre</option>
+    <option value="Noviembre">Noviembre</option>
+    <option value="Diciembre">Diciembre</option>
+  </select>
+
+  AA<input type="number" required>
+  <p>Cuotas
+  <label for="cuotas" ></label>
+  <select required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+  </p>
+  <select required>
+    <option value="CC">CC</option>
+    <option value="NIT">NIT</option>
+  </select>
+  <input type="number" placeholder="Numero de documento"  style="width: 55%;" required >
+  <br><br>
+  <input type="text" placeholder="Correo electronico" style="width: 66%;" required>
 
   </div>
 
-
-    <br><br>
-    <button id="enviar">Enviar</button>
-  
 </div>
+
+
+<br><br>
+
+
     <header></header>
     <main></main>
     <footer></footer>
+
+<button id="enviar">Pagar</button>
+</form>
+<span id="mensaje"></span>
     <script src="index.js" type="module"></script>
  
  
@@ -47,4 +89,3 @@
  
   </body>
 </html>
----
