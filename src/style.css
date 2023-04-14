@@ -26,6 +26,8 @@ img{
     font-weight:800;
 }
 
+
+
 #enviar{
     text-align: center;
     margin-top: 60px;
@@ -53,4 +55,12 @@ img{
  
     width: 50%;
   float: right;
+}
+
+.valido{
+    color: green;
+}
+
+.invalido{
+    color: red;
 }

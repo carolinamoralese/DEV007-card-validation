@@ -15,7 +15,7 @@ const validator = {
     let sumaImpar = 0
     let sumaTotal = 0
     for (let i = 0; i < arrayNumeroTarjeta.length; i++) {
-      console.log((i+1) % 2 )
+      
       if((i+1) % 2 == 0 ) {
         
       
@@ -24,23 +24,27 @@ const validator = {
         if(numeroMultiplicado >= 10){
           let stringNumeroMultiplicado = numeroMultiplicado.toString()
           let arrayNumeroMultiplicado = stringNumeroMultiplicado.split('');
+          console.log(parseInt(arrayNumeroMultiplicado[0]) + parseInt(arrayNumeroMultiplicado[1]))
          
           sumaPar += parseInt(arrayNumeroMultiplicado[0]) + parseInt(arrayNumeroMultiplicado[1])
           
+        }else{
+          sumaPar = sumaPar + numeroMultiplicado 
         }
         
       }else{
+        console.log(parseInt(arrayNumeroTarjeta[i]))
         sumaImpar += parseInt(arrayNumeroTarjeta[i])
        
       }
       
     }
     sumaTotal = sumaPar + sumaImpar
-        
+    
 
 
     let resultado = sumaTotal % 10
-    console.log(resultado)
+    
     if(resultado == 0){
       return true
     }else{
