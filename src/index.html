@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<form>
+<form id="validacion-tarjeta">
     
-    <div style="width: 72%;"><h1>Comfirmar reserva</h1></div>
+    <div style="width: 72%;"><h1>Realiza el pago de la factura</h1></div>
 <div id = "pantalla-general" class="contenedor">
 
 
   <div id = "pantalla-uno" class="pantalla1">
     <p id="tc">Tarjeta Debito o Credito</p>
     <p>Usa los digitos del codigo de seguridad de tu tarjeta</p>
-    <input type = "number" id="numero-tarjeta" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==16) return false;" placeholder="Numero de tarjeta" required/> 💳
-    <input type = "number" placeholder="CVV/CVC" required>
+    <input type = "number" id="numero-tarjeta" pattern="/^-?\d+\.?\d*$/" onkeypress="if(this.value.length >15) return false;" placeholder="Numero de tarjeta" autofocus required/> 💳
+    <input type = "text" maxlength="3" placeholder="CVV/CVC"  required>
     <br><br>
     <input type = "text" placeholder = "Nombre (debe coincidir con la tarjeta)" style="width: 72%;" required>
     <br><br>
@@ -63,7 +63,7 @@
   </select>
   <input type="number" placeholder="Numero de documento"  style="width: 55%;" required >
   <br><br>
-  <input type="text" placeholder="Correo electronico" style="width: 66%;" required>
+  <input type="email" placeholder="Correo electronico" style="width: 66%;" required>
 
   </div>
 
@@ -72,22 +72,18 @@
 
 <br><br>
 
-
-    <header></header>
-    <main></main>
-    <footer></footer>
-
-<button id="enviar">Pagar</button>
+<button type="submit">Pagar</button>
 <br><br>
 </form>
+
+<span id="titulo-resumen"></span>
 <span id="mensaje-valido"></span>
 <span id="mensaje-invalido"></span>
-<span id="numero-enmascarado"></span>
+<span id="numero-enmascarado"></span>  
+
+
     <script src="index.js" type="module"></script>
- 
- 
- 
- 
+
  
  
   </body>
