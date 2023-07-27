@@ -1,5 +1,5 @@
 # Tarjeta de crédito válida
-dev-007-card-validation-7lrh-eupjcmxey-carolinamoralese.vercel.app
+https://dev-007-card-validation-7lrh-mjy0iddzv-carolinamoralese.vercel.app/
 
 ## Acerca del proyecto 
 Card Validation se creo como ultimo paso para terminar el proceso de pago de una factura de servicios publicos, en esta aplicacion Web se busca validar que el numero de tarjeta ingresada por el usuario sea valida y para esto se implemento el codigo Luhn.
@@ -17,9 +17,18 @@ Luego de realizar la implementacion de los metodos y que pasara todas las prueba
 
 El diseño se baso en una pagina de pago, donde utiliza colores muy neutros ya que esta esta dirigida a todo tipo de usuario y se busca que los usuarios se sientan comodos y visulamente no se sienta cargada
 
+## Ejemplos de uso:
 
+- Cuando los datos ingresados son correctos nos aparece de la siguiente manera:
+![validacion ok](https://github.com/carolinamoralese/DEV007-card-validation/blob/4ec6a9fd1e03e6f8c5365369d94e4f01d645e12e/Imagenes/valido.png)
 
-## .Para considerar Project Feedback
+- Cuando los datos ingresados son incorrectos nos aparece de la siguiente manera:
+![validacion fail](https://github.com/carolinamoralese/DEV007-card-validation/blob/4ec6a9fd1e03e6f8c5365369d94e4f01d645e12e/Imagenes/no%20valido.png)
+
+-Cuando no ingresan la totalidad de la información en los campos nos aparece de la siguiente manera:
+![sin validacion](https://github.com/carolinamoralese/DEV007-card-validation/blob/4ec6a9fd1e03e6f8c5365369d94e4f01d645e12e/Imagenes/error.png)
+
+## Para considerar Project Feedback
 
 En resumen, los criterios de aceptación mínimos del proyecto para considerar
 Project Feedback:
