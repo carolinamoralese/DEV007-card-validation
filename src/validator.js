@@ -34,9 +34,12 @@ const validator = {
       }
       
     }
+    console.log(sumaPar) 
+    console.log(sumaImpar)
     sumaTotal = sumaPar + sumaImpar
   
     const resultado = sumaTotal % 10
+  
     
     if(resultado === 0){
       return true

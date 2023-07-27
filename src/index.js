@@ -17,7 +17,7 @@ function obtenerNumeroTarjeta(event){
   const tituloResumen = document.getElementById("titulo-resumen")
 
   if(esValido === true){
-    tituloResumen.innerHTML = "Resumen de la transaccion"
+    tituloResumen.innerHTML = " <b>Resumen de la transaccion<b>"
     tituloResumen.style.display="block"
     mensajeInvalido.style.display= "none"
     mensajeValido.innerHTML = "El numero de tarjea ingresado es <b>Valido</b>"
