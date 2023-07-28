@@ -25,7 +25,7 @@ El diseño se baso en una pagina de pago, donde utiliza colores muy neutros ya q
 - Cuando los datos ingresados son incorrectos nos aparece de la siguiente manera:
 ![validacion fail](https://github.com/carolinamoralese/DEV007-card-validation/blob/4ec6a9fd1e03e6f8c5365369d94e4f01d645e12e/Imagenes/no%20valido.png)
 
--Cuando no ingresan la totalidad de la información en los campos nos aparece de la siguiente manera:
+- Cuando no ingresan la totalidad de la información en los campos nos aparece que debemos de diligenciar toda la informacion para poder proceder a verficar el número de la tarjeta:
 ![sin validacion](https://github.com/carolinamoralese/DEV007-card-validation/blob/4ec6a9fd1e03e6f8c5365369d94e4f01d645e12e/Imagenes/error.png)
 
 ## Para considerar Project Feedback
